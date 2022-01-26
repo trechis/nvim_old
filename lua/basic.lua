@@ -13,14 +13,14 @@ vim.wo.cursorline = true
 vim.wo.signcolumn = "yes"
 -- show right colorcolumn
 vim.wo.colorcolumn = "100"
--- 2 Space = 1 Tab at the begining of the sentence
-vim.o.tabstop = 2
-vim.bo.tabstop = 2
-vim.o.softtabstop = 2
+-- 4 Space = 1 Tab at the begining of the sentence
+vim.o.tabstop = 4
+vim.bo.tabstop = 4
+vim.o.softtabstop = 4
 vim.o.shiftround = true
 -- 1 Tab length & >> << move length
-vim.o.shiftwidth = 2
-vim.bo.shiftwidth = 2
+vim.o.shiftwidth = 4
+vim.bo.shiftwidth = 4
 -- new line follow the previous line style
 vim.o.expandtab = true
 vim.bo.expandtab = true
@@ -37,7 +37,7 @@ vim.o.incsearch = true
 -- show vim mode
 vim.o.showmode = true
 -- command height
-vim.o.cmdheight = 2
+vim.o.cmdheight = 1
 -- auto read while the file modified
 vim.o.autoread = true
 vim.bo.autoread = true
@@ -54,7 +54,7 @@ vim.o.mouse = "a"
 vim.o.backup = false
 vim.o.writebackup = false
 vim.o.swapfile = false
--- smaller updatetime 
+-- smaller updatetime
 vim.o.updatetime = 300
 -- wait mappings time
 -- vim.o.timeoutlen = 100
@@ -78,15 +78,15 @@ vim.o.pumheight = 10
 -- always show tabline
 vim.o.showtabline = 2
 -- copy and paste enable
--- vim.g.clipboard = {
---  name = "win32yank-wsl",
---  copy = {
---    ["+"] = "win32yank.exe -i --crlf",
---    ["*"] = "win32yank.exe -i --crlf"
---  },
---  paste = {
---    ["+"] = "win32yank.exe -o --crlf",
---    ["*"] = "win32yank.exe -o --crlf"
---  },
---  cache_enable = 0,
---}
+ vim.g.clipboard = {
+  name = "win32yank-wsl",
+  copy = {
+    ["+"] = "win32yank.exe -i --crlf",
+    ["*"] = "win32yank.exe -i --crlf"
+  },
+  paste = {
+    ["+"] = "win32yank.exe -o --crlf",
+    ["*"] = "win32yank.exe -o --crlf"
+  },
+  cache_enable = 1,
+}
